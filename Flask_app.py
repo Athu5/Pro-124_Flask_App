@@ -35,7 +35,7 @@ def add_task():
         'Contact': request.json.get('Contact', ""),
         'done': False
     }
-    List.append(contact)
+    List.append(task)
     return jsonify({
         "status":"success",
         "message": "Task added succesfully!"
